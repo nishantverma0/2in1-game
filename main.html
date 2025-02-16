@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(128, 107, 78);
+        }
+        p.ex1 {
+    font-size: 60px;
+    color: #ffe100;
+}
+   
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            opacity: 0.5;
+                  }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .button img {
+            width: 350px; 
+            height: auto;
+            border-radius: 8px; 
+        }
+    </style>
+</head>
+<body>
+    <center><p class="ex1">2 in 1 Game</p></center>
+    <div class="button-container">
+        <a href="snake.html" class="button">
+            <img src="snake.png" alt="Button 1">
+            <p><center>Snake Game</center></p>
+        </a>
+
+        <a href="2048.html" class="button">
+            <img src="2048.png" alt="Button 2">
+            <p><center>2048</center></p>
+        </a>
+    </div>
+</body>
+</html>
